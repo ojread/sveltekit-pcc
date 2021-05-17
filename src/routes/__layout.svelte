@@ -6,10 +6,10 @@
 
 <Header />
 
-<main role="main">
-    <div class="container py-4">
-        <slot />
-    </div>
+<main id="main" role="main">
+  <div class="container py-4">
+    <slot />
+  </div>
 </main>
 
 <Footer />
