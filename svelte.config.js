@@ -1,5 +1,6 @@
 import preprocess from "svelte-preprocess";
 import dsv from "@rollup/plugin-dsv";
+import adapter from "@sveltejs/adapter-static";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -18,6 +19,8 @@ const config = {
     vite: {
       plugins: [dsv()],
     },
+
+    adapter: adapter(),
   },
 };
 

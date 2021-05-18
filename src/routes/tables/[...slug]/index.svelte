@@ -1,6 +1,4 @@
 <script lang="ts" context="module">
-  export const prerender = true;
-
   /**
    * @type {import('@sveltejs/kit').Load}
    */
@@ -18,5 +16,9 @@
   import Table from "$lib/Table.svelte";
   export var data;
 </script>
+
+<svelte:head>
+	<title>Table</title>
+</svelte:head>
 
 <Table {data} />

@@ -24,9 +24,12 @@
   export var tables: TableLink[];
 </script>
 
+<svelte:head>
+	<title>Tables</title>
+</svelte:head>
+
 <div class="prose">
   <h1>Tables</h1>
-  <p>Here is a list of tables.</p>
 
   {#if tables}
     <ul>
